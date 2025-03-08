@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+* {
+  scrollbar-width: 0;
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.shape {
+  background: linear-gradient(
+    rgba(238, 0, 0, 1) 0%,
+    rgba(238, 163, 0, 1) 77%,
+    rgba(252, 252, 252, 1) 100%
+  );
+  border-radius: 25rem 25rem 0 0;
+  opacity: 0.7;
+}
+
+.glass-btn {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14px);
+}
+
+.wrapper {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  max-height: 100vh;
+}
+
+.btn {
+  @apply px-7 py-4 rounded-xl;
+}
+
+.img {
+  @apply w-24 h-[480px] object-cover rounded-lg;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  padding: 15px;
+}
+
+.bg-img {
+  background-image: url("../assets//pexels-pixabay-417339.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.box {
+  @apply p-10 flex flex-col gap-4 items-start rounded-xl hover:bg-green-100 cursor-pointer;
+}
+
+.box h3 {
+  @apply font-medium;
+}
+.box img {
+  @apply w-16 h-16 rounded-xl grayscale;
+}
+.box p {
+  @apply opacity-80 leading-7;
+}
+
+.box button {
+  @apply text-green-500 font-medium;
+}
+
+.contact-bg {
+  background-image: url("../assets//pexels-pixabay-417339.jpg");
+  background-position: center;
+  background-size: fill;
+  height: 400px;
+  width: 100%;
+  filter: invert(10%);
+}
+
+.menu {
+  @apply flex flex-col gap-4 items-center font-medium;
+}
+
+.icon {
+  @apply border border-black/10 p-4 rounded-full cursor-pointer;
+}
