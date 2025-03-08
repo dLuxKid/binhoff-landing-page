@@ -183,9 +183,9 @@ export default function Page() {
         </span>
       </nav>
       <section className="h-screen overflow-hidden">
-        <div className="flex items-center justify-between h-full">
-          <div className="p-20 flex-1">
-            <p className="text-[9rem] font-bold leading-none mb-10">
+        <div className="flex items-center pl-[5%] py-[5%] justify-between h-full">
+          <div className="flex-1">
+            <p className="text-[7.5rem] font-bold leading-none mb-10">
               Invest in <br /> real estate
             </p>
             <div className="flex gap-4">
