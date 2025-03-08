@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import img1 from "@/assets/pexels-expect-best-79873-323705.webp";
@@ -183,7 +184,7 @@ export default function Page() {
         </span>
       </nav>
       <section className="h-screen overflow-hidden">
-        <div className="flex items-center pl-[5%] py-[5%] justify-between h-full">
+        <div className="flex items-center pl-[5%] justify-between h-full">
           <div className="flex-1">
             <p className="text-[7.5rem] font-bold leading-none mb-10">
               Invest in <br /> real estate
@@ -207,7 +208,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 px-40">
+      <section className="py-[5%] px-[5%]">
         <div className="text-content overflow-hidden py-20 flex flex-col gap-5 border-b border-gray-300">
           <h1 className="text-gray-800 text-6xl leading-normal font-medium">
             The property that <br /> suits you perfectly
@@ -220,7 +221,7 @@ export default function Page() {
           </p>
         </div>
       </section>
-      <section className="p-20">
+      <section className="p-[5%]">
         <div>
           <div className="flex items-center justify-around mb-10">
             <h1 className="text-4xl font-bold">Binhoff gallery</h1>
@@ -236,7 +237,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="px-20 ml-40 h-[500px] swiper-container">
+          <div className="px-[5%] ml-40 h-[500px] swiper-container">
             <Swiper
               className="h-full"
               modules={[Navigation, A11y]}
@@ -264,7 +265,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="py-20 overflow-hidden">
+      <section className="py-[5%] overflow-hidden">
         <div className="bg-img">
           <div className="h-full bg-text flex flex-col gap-4 items-center justify-center text-white px-80">
             <h1 className="text-6xl font-bold">Our Mission</h1>
@@ -277,7 +278,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="p-40 flex flex-col gap-20 items-center justify-center border-b border-gray-300">
+      <section className="px-[10%] py-[5%] flex flex-col gap-20 items-center justify-center border-b border-gray-300">
         <h1 className="text-4xl font-bold">Actual News</h1>
         <div className="flex flex-wrap items-center justify-center gap-10">
           {articles.map((article, i) => (
@@ -305,8 +306,8 @@ export default function Page() {
           See {!isClick ? "More" : "Less"}
         </button>
       </section>
-      <section className="p-40">
-        <h1 className="text-6xl p-40 text-gray-800 text-center">
+      <section className="p-[10%]">
+        <h1 className="text-6xl text-gray-800 text-center">
           The unique investment opportunity
         </h1>
         <div className="flex gap-12 items-center justify-center p-12">
